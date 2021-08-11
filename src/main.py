@@ -29,15 +29,6 @@ def now(systemTray):
 		else:
 			pass
 
-	try:
-		period == 1
-	except:
-		trayItem.notify( # TrayItem will be the same because it was passed into systemTray() along with notifyLoop()
-			title = f"There is no next class?",
-			message = f"Variable period not assigned"
-		)
-
-
 	# We only need week and day
 	year, week, day = datetime.date.today().isocalendar()
 	
@@ -80,10 +71,10 @@ def last_run(systemTray):
 	# Checks for the period that is directly after the said time
 	for i in timetable.loc[:, "Time"]:
 		if time < i:
-			period = i
+			period = b
 			break
 		else:
-			pass
+			b = i
 
 	try:
 		period == 1
