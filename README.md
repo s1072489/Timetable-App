@@ -13,5 +13,5 @@ Note: The format to keep is `SUBJECT|ROOM|TEACHER`
 # How to add to startup/login
 [redirect to a youtube](https://youtu.be/WtmFeX8NKSk)
 
-# Realeases:
+# Releases:
 [here](https://github.com/s1072489/Timetable-App/releases/)
