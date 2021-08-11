@@ -11,4 +11,4 @@ Note: The format to keep is `SUBJECT|ROOM|TEACHER`
 ## The current data is for 7.3
 
 # How to add to startup/login
-[redirect to a youtube]()
+[redirect to a youtube](https://youtu.be/WtmFeX8NKSk)
