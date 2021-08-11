@@ -9,3 +9,6 @@ You can now change the subject, room, and teacher data.
 NOTE: `None` means it is a double.
 Note: The format to keep is `SUBJECT|ROOM|TEACHER`
 ## The current data is for 7.3
+
+# How to add to startup/login
+[redirect to a youtube](https://youtu.be/WtmFeX8NKSk)
