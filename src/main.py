@@ -164,7 +164,16 @@ def manual_run(systemTray):
 			message = f"Room: {room}\nTeacher: {teacher}\nPeriod {period}"
 		)
 	else:
-		pass
+		period_week = timetable.iloc[timetable.loc[timetable["Time"] == period].index - 1].to_dict()
+		info = list(period_week[f"Day {day}"].values())[0].split("|")
+		subject = info[0]
+		period = list(period_week["Period"].values())[0] # Get the period number from the period column
+		room = info[1]
+		teacher = info[2]
+		trayItem.notify( # TrayItem will be the same because it was passed into systemTray() along with notifyLoop()
+			title = f"{subject} is a double.",
+			message = f"Room: {room}\nTeacher: {teacher}\nPeriod {period}"
+		)
 
 
 timetable = pandas.read_excel("main.xlsx", sheet_name='Sheet1')
