@@ -2,7 +2,7 @@
 A timetable application made with python
 
 # How to customise Sport and Languages
-If you did not use the .msi installer, skip this step. Otherwise, right click the shortcut on the desktop and press `open file location`.
+If you did not use the .msi installer, skip this step. Otherwise, right click the shortcut on the desktop and press `open file location`.  
 Then, open the excel spreadsheet named `main.xlsx`.
 You can now change the subject, room, and teacher data.
 
@@ -12,3 +12,6 @@ Note: The format to keep is `SUBJECT|ROOM|TEACHER`
 
 # How to add to startup/login
 [redirect to a youtube](https://youtu.be/WtmFeX8NKSk)
+
+# Releases:
+[here](https://github.com/s1072489/Timetable-App/releases/)
