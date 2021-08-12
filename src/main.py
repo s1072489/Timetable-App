@@ -13,17 +13,19 @@ def exit():
 	os._exit(0)
 
 # Calculate
-def now(systemTray):
+def now():
+	now_run(systemTray=systemTray)
+def now_run(systemTray):
 
 	# Get current time in 24 format
-	time = datetime.datetime.now()
-	hour = time.hour
-	minute = time.minute
-	time = int(str(hour) + "00") + minute
+	rn = datetime.datetime.now()
+	hour = rn.hour
+	minute = rn.minute
+	rn = int(str(hour) + "00") + minute
 
 	# Checks for the period that is directly after the said time
 	for i in timetable.loc[:, "Time"]:
-		if time < i:
+		if rn < i:
 			period = i
 			break
 		else:
@@ -49,7 +51,7 @@ def now(systemTray):
 		room = info[1]
 		teacher = info[2]
 		trayItem.notify( # TrayItem will be the same because it was passed into systemTray() along with notifyLoop()
-			title = f"{subject} is starting in 5 minutes.",
+			title = f"{subject} is starting next.",
 			message = f"Room: {room}\nTeacher: {teacher}\nPeriod {period}"
 		)
 	else:
